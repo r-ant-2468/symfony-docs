@@ -310,7 +310,7 @@ concrete one::
 
             $container->set(NewsRepositoryInterface::class, $newsRepository);
 
-            // will be injected the mocked repository
+            // will inject the mocked repository
             $newsletterGenerator = $container->get(NewsletterGenerator::class);
 
             // ...
